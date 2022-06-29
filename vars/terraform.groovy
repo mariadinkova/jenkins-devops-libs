@@ -238,7 +238,7 @@ void init(config) {
 
   // initialize the working config directory
   try {
-    dir(config.configDir) {
+    dir(config.dir) {
       sh(label: 'Terraform Init', script: cmd)
     }
   }
